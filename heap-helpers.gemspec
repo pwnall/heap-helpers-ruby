@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Victor Costan"]
-  s.date = "2016-02-26"
+  s.date = "2016-03-01"
   s.description = "Rails-compatible helpers for setting the heap.js snippet"
   s.email = "victor@costan.us"
   s.extra_rdoc_files = [
@@ -48,28 +48,34 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<heap>, ["~> 1.0"])
       s.add_development_dependency(%q<activesupport>, [">= 2.3.8"])
-      s.add_development_dependency(%q<minitest>, [">= 0"])
-      s.add_development_dependency(%q<yard>, [">= 0.8.7.6"])
-      s.add_development_dependency(%q<rdoc>, [">= 3.12"])
       s.add_development_dependency(%q<bundler>, [">= 1.0"])
+      s.add_development_dependency(%q<coveralls>, [">= 0.8.10"])
       s.add_development_dependency(%q<jeweler>, [">= 2.0.1"])
+      s.add_development_dependency(%q<minitest>, [">= 5.8.4"])
+      s.add_development_dependency(%q<rdoc>, [">= 3.12"])
+      s.add_development_dependency(%q<simplecov>, [">= 0.11.2"])
+      s.add_development_dependency(%q<yard>, [">= 0.8.7.6"])
     else
       s.add_dependency(%q<heap>, ["~> 1.0"])
       s.add_dependency(%q<activesupport>, [">= 2.3.8"])
-      s.add_dependency(%q<minitest>, [">= 0"])
-      s.add_dependency(%q<yard>, [">= 0.8.7.6"])
-      s.add_dependency(%q<rdoc>, [">= 3.12"])
       s.add_dependency(%q<bundler>, [">= 1.0"])
+      s.add_dependency(%q<coveralls>, [">= 0.8.10"])
       s.add_dependency(%q<jeweler>, [">= 2.0.1"])
+      s.add_dependency(%q<minitest>, [">= 5.8.4"])
+      s.add_dependency(%q<rdoc>, [">= 3.12"])
+      s.add_dependency(%q<simplecov>, [">= 0.11.2"])
+      s.add_dependency(%q<yard>, [">= 0.8.7.6"])
     end
   else
     s.add_dependency(%q<heap>, ["~> 1.0"])
     s.add_dependency(%q<activesupport>, [">= 2.3.8"])
-    s.add_dependency(%q<minitest>, [">= 0"])
-    s.add_dependency(%q<yard>, [">= 0.8.7.6"])
-    s.add_dependency(%q<rdoc>, [">= 3.12"])
     s.add_dependency(%q<bundler>, [">= 1.0"])
+    s.add_dependency(%q<coveralls>, [">= 0.8.10"])
     s.add_dependency(%q<jeweler>, [">= 2.0.1"])
+    s.add_dependency(%q<minitest>, [">= 5.8.4"])
+    s.add_dependency(%q<rdoc>, [">= 3.12"])
+    s.add_dependency(%q<simplecov>, [">= 0.11.2"])
+    s.add_dependency(%q<yard>, [">= 0.8.7.6"])
   end
 end
 
